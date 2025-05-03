@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plastic Memories Quiz</title>
+  <link rel="icon" href="icono.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <style>
+    @font-face {
+      font-family: 'Futuristic';
+      src: url('fuente.otf') format('opentype');
+    }
+  </style>
+  
+  <audio id="bg-music" autoplay loop>
+  <source src="fondo.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio HTML5.
+</audio>
+  
+</head>
+<body>
+  <div id="overlay">
+    <div class="lua-box">
+      <h1>ムビダ島</h1>
+      <p>Bienvenido a la plataforma de Plástic Memories.<p>
+      
+    <p> ¡Cada Pregunta es un Capítulo!</p>
+      <p>Si eres un verdadero fan del anime, podrías ganarte una cuenta premium de Crunchyroll</p>
+      <button id="start-btn">★ Iniciar</button>
+    </div>
+  </div>
+
+  <div id="quiz-container" class="hidden">
+    <div id="question-box">
+      <h2 id="question">Pregunta 1</h2>
+      <div id="options">
+        <button class="option">Opción 1</button>
+        <button class="option">Opción 2</button>
+        <button class="option">Opción 3</button>
+        <button class="option">Opción 4</button>
+      </div>
+    </div>
+    <button id="next-btn" class="hidden">Siguiente</button>
+  </div>
+
+  <div id="result-box" class="hidden">
+    <h2 id="result-title"></h2>
+    <div id="reward" class="hidden">
+      <p><strong>Correo:</strong> ganador@krillin.com</p>
+      <p><strong>Contraseña:</strong> plasticMemories2025</p>
+      <p><strong>Perfil:</strong> Usuario Premium</p>
+      <p class="note">¡Felicidades por ser fan de 
+      Plastic Memories!
+      </p>
+    </div>
+  </div>
+</body>
+</html>
